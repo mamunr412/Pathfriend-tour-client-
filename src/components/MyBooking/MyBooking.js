@@ -4,9 +4,9 @@ import { Card, Col } from 'react-bootstrap';
 
 const MyBooking = ({ oder }) => {
     return (
-        <div>
+        <div style={{ height: "450px", width: "300px" }}>
             <Col >
-                <Card className="mt-5" style={{ height: "400px", width: "300px" }}>
+                <Card>
                     <Card.Img variant="top" src={oder.pack.img} style={{ height: "200px", backgroundSize: "cover", objectFit: "cover" }} />
                     <Card.Body>
                         <Card.Title>{oder.pack.name}</Card.Title>
