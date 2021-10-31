@@ -1,0 +1,19 @@
+.single-container{
+    margin: 0 40px;
+    gap: 20px;
+}
+
+
+.single-package img {
+   background-size: cover;
+   width: 300px;
+ 
+}
+.container{
+    display: flex;
+    gap: 100px;
+}
+.from input{
+    margin-bottom: 10px;
+    width: 100%;
+}

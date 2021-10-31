@@ -1,0 +1,11 @@
+.footer-container{
+    margin-top: 30px;
+    background-color:#212529;   
+}
+
+.footer h4{
+    color: white;
+}
+.footer-list h5{
+    color :rgb(180, 177, 177);
+}
