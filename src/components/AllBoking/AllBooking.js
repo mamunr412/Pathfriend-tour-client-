@@ -22,7 +22,7 @@ const AllBooking = () => {
         })
             .then(res => res.json())
             .then(data => {
-                const processed = window.confirm("Are You Sure To Delete t")
+                const processed = window.confirm("Are You Sure To Delete It")
                 if (processed) {
                     if (data.deletedCount) {
                         alert("Delete successfully")
