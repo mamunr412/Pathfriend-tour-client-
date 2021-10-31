@@ -40,7 +40,7 @@ const Oders = () => {
         <div>
             <Container >
                 <Row xs={1} md={3} >
-                    {oders.map(oder => <div style={{ height: "450px", width: "300px" }}>
+                    {oders.map(oder => <div key={oder._id} style={{ height: "450px", width: "300px" }}>
                         <Col >
                             <Card>
                                 <Card.Img variant="top" src={oder.pack.img} style={{ height: "200px", backgroundSize: "cover", objectFit: "cover" }} />
