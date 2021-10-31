@@ -45,7 +45,7 @@ function App() {
           <Route path='/allbooking'>
             <AllBooking></AllBooking>
           </Route>
-          <Route path='/myoders'>
+          <Route path='/mybooking'>
             <Oders></Oders>
           </Route>
           <PrivateRoute exact path='/package/:id'>

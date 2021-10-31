@@ -29,7 +29,7 @@ const Header = () => {
                                         <Link style={{ textDecoration: 'none', marginBottom: "10px" }} to="/allbooking" >Manage All Booking</Link>
                                         <br />
 
-                                        <Link style={{ textDecoration: "none", marginTop: "20px" }} to='/myoders'>My Booking</Link>
+                                        <Link style={{ textDecoration: "none", marginTop: "20px" }} to='/mybooking'>My Booking</Link>
                                         <br />
 
                                         <Link style={{ textDecoration: "none", marginTop: "10px" }} to="/addnewpackage" >Add New Package</Link>
