@@ -14,7 +14,7 @@ const Packages = () => {
 
     return (
         <div>
-            <h1 className="text-center mt-5">Popular Package </h1>
+            <h1 className="text-center mt-5">Our Package </h1>
             <Container>
 
                 {
