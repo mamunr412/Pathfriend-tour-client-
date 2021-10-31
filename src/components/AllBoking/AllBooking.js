@@ -55,23 +55,23 @@ const AllBooking = () => {
                 <Row xs={1} md={3}>
                     {allBooking.map(booking => <div key={booking._id}>
                         <Col  >
-                            <Card style={{ height: "420px", }}
+                            <Card style={{ height: "420px", width: "300px" }}
                                 className="mt-5 card">
                                 <Card.Img style={{ height: "200px", backgroundSize: "cover", objectFit: "cover" }} variant="top" src={booking.pack.img} />
                                 <Card.Body>
                                     <Card.Title>{booking.pack.name}</Card.Title>
                                     <Card.Text>
-                                        Name: {booking.name}
+                                        Name : {booking.name}
                                         <br />
-                                        Email: {booking.email}
+                                        Email : {booking.email}
                                         <br />
-                                        Join date: {booking.Date}
+                                        Join date : {booking.Date}
                                         <br />
-                                        Address: {booking.Address}
+                                        Address : {booking.Address}
                                         <br />
-                                        Phone: {booking.phone}
+                                        Phone : {booking.phone}
                                         <br />
-                                        Status: {booking.status}
+                                        Status : {booking.status}
                                     </Card.Text>
                                     <div className="d-flex " >
                                         <Button onClick={() => handelDeleted(booking._id)} variant="primary" style={{ marginRight: "10px" }} variant="danger">Delete</Button>
