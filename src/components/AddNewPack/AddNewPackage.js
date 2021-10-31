@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import './AddNewPack.css'
 
 const AddNewPackage = () => {
-    const { register, handleSubmit, } = useForm();
+    const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         fetch('https://eerie-corpse-05166.herokuapp.com/package', {
             method: "POST",
@@ -16,7 +16,8 @@ const AddNewPackage = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.insertedId) {
-                    alert('New Package Added')
+                    alert('New Package Added');
+                    reset()
                 }
 
 
