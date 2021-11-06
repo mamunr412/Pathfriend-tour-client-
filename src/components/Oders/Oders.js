@@ -18,7 +18,9 @@ const Oders = () => {
 
     // delete package 
     const bookingDelete = (_id) => {
-        fetch(`https://eerie-corpse-05166.herokuapp.com/packagedelete/${_id}`, {
+
+
+        fetch(`http://localhost:5000/deleteMyBooking/${_id}`, {
             method: "DELETE",
             headers: {
                 "content-type": "application.json"
@@ -26,6 +28,7 @@ const Oders = () => {
         })
             .then(res => res.json())
             .then(data => {
+
                 const deleted = window.confirm("Are You Sure To Deleted it")
                 if (deleted) {
                     if (data.deletedCount) {
