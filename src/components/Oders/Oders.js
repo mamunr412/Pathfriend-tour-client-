@@ -20,7 +20,7 @@ const Oders = () => {
     const bookingDelete = (_id) => {
 
 
-        fetch(`http://localhost:5000/deleteMyBooking/${_id}`, {
+        fetch(`https://eerie-corpse-05166.herokuapp.com/deleteMyBooking/${_id}`, {
             method: "DELETE",
             headers: {
                 "content-type": "application.json"
