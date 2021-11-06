@@ -18,25 +18,24 @@ const Oders = () => {
 
     // delete package 
     const bookingDelete = (_id) => {
+        const deleted = window.confirm("Are You Sure To Deleted it");
 
-
-        fetch(`https://eerie-corpse-05166.herokuapp.com/deleteMyBooking/${_id}`, {
-            method: "DELETE",
-            headers: {
-                "content-type": "application.json"
-            }
-        })
-            .then(res => res.json())
-            .then(data => {
-
-                const deleted = window.confirm("Are You Sure To Deleted it")
-                if (deleted) {
-                    if (data.deletedCount) {
-                        alert("Delete successfully")
-
-                    }
+        if (deleted) {
+            fetch(`https://eerie-corpse-05166.herokuapp.com/deletebooking/${_id}`, {
+                method: "DELETE",
+                headers: {
+                    "content-type": "application.json"
                 }
             })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.acknowledged) {
+                        alert("Delete successfully")
+                    }
+                })
+        }
+
+
     }
 
     return (

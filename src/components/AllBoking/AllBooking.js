@@ -14,23 +14,25 @@ const AllBooking = () => {
 
     // delete booking 
     const handelDeleted = (_id) => {
-        fetch(`https://eerie-corpse-05166.herokuapp.com/deletebooking/${_id}`, {
-            method: "DELETE",
-            headers: {
-                "content-type": "application.json"
-            }
-        })
-            .then(res => res.json())
-            .then(data => {
-                const processed = window.confirm("Are You Sure To Delete It")
-                if (processed) {
+        const processed = window.confirm("Are You Sure To Delete It");
+
+        if (processed) {
+            fetch(`https://eerie-corpse-05166.herokuapp.com/deletebooking/${_id}`, {
+                method: "DELETE",
+                headers: {
+                    "content-type": "application.json"
+                }
+            })
+                .then(res => res.json())
+                .then(data => {
                     if (data.deletedCount) {
                         alert("Delete successfully")
                         const remaning = allBooking.filter(sBook => sBook._id !== _id)
                         setAllBooking(remaning)
                     }
-                }
-            });
+
+                });
+        }
     }
     // approve the package 
     const handelApprove = (_id) => {
