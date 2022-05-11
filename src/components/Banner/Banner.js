@@ -6,7 +6,7 @@ import photo2 from '../../image/4953259.jpg';
 import photo3 from '../../image/Thailand.jpg'
 
 const Banner = () => {
-
+console.log('abcd')
     return (
         <div >
             <Container className="mt-5" >

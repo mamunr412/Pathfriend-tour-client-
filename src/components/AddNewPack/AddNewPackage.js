@@ -27,6 +27,7 @@ const AddNewPackage = () => {
     return (
         <div style={{ backgroundColor: "#f8fafc" }}>
             <Container>
+
                 <Row>
                     <h1 className="text-center mt-5">Add A New Tour Package</h1>
                     <Col className="mt-5">
